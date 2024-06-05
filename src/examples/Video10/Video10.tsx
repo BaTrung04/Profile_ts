@@ -6,14 +6,20 @@ export interface ITest {
   age: number;
 }
 
+export interface IDefault {
+  defaultName: string;
+  defaultAge: number;
+}
+
 export interface IUser {
   name: string;
   age: number;
   city: string;
 }
-const Video10 = () => {
-  const [name, setName] = useState<string>("");
-  const [age, setAge] = useState<number | string>("");
+const Video10 = (props: IDefault) => {
+  const { defaultName, defaultAge } = props;
+  const [name, setName] = useState<string>(defaultName);
+  const [age, setAge] = useState<number | string>(defaultAge);
   const [city, setCity] = useState<string[]>([
     "Hà Nội",
     "Đà Nẵng",
