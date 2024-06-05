@@ -16,7 +16,7 @@ const HomeCV = () => {
             <div className="content hero">
               <div className="inner_content">
                 <div className="image_wrap">
-                  <img src="img/hero/img.png" alt="hero" />
+                  <img src="img/hero/img.jpg" alt="hero" />
                 </div>
                 <div className="name_holder">
                   <h3>
