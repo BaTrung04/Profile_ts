@@ -1,4 +1,4 @@
-import desktopLogo from "@/assets/img/logo/desktop-logo.png";
+import desktopLogo from "@/assets/img/logo/React_Logo_SVG.svg";
 
 const LeftPart = () => {
   return (
@@ -23,7 +23,7 @@ const LeftPart = () => {
                 <a href="#skills">Skills</a>
               </li>
               <li>
-                <a href="#news">News</a>
+                <a href="#project">Project</a>
               </li>
             </ul>
           </div>
