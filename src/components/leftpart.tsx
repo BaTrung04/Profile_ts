@@ -25,6 +25,9 @@ const LeftPart = () => {
               <li>
                 <a href="#project">Project</a>
               </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
           <div className="leftpart_bottom">
