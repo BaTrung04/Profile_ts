@@ -1,9 +1,11 @@
+import { useState } from "react";
 import LeftPart from "../components/leftpart";
 import MobileMenu from "../components/mobile/menu";
 import Preloader from "../components/preloader";
 import RightPart from "../components/rightpart";
 import { FloatButton } from "antd";
 const Portfolio = () => {
+  const [hideLeftPart, setHideLeftPart] = useState<boolean>(true);
   return (
     <div className="arlo_tm_wrapper_all">
       <div id="arlo_tm_popup_blog">
@@ -26,15 +28,21 @@ const Portfolio = () => {
       {/* <!-- CONTENT --> */}
       <div className="arlo_tm_content">
         {/* <!-- LEFTPART --> */}
-        <LeftPart />
+        <LeftPart
+          hideLeftPart={hideLeftPart}
+          setHideLeftPart={setHideLeftPart}
+        />
         {/* <!-- /LEFTPART --> */}
 
         {/* <!-- RIGHTPART --> */}
-        <RightPart />
+        <RightPart
+          hideLeftPart={hideLeftPart}
+          setHideLeftPart={setHideLeftPart}
+        />
         {/* <!-- /RIGHTPART --> */}
 
         {/* <a className="arlo_tm_totop" href="#"></a> */}
-        <FloatButton.BackTop />
+        <FloatButton.BackTop tooltip={<div>Tới đầu trang</div>} />
       </div>
     </div>
   );

@@ -1,9 +1,28 @@
 import trungLogo from "@/assets/img/about/2.jpg";
 import myCV from "@/assets/CV Nguyễn Bá Trung.pdf";
 import { TypeAnimation } from "react-type-animation";
+import { useEffect, useRef } from "react";
+import Parallax from "parallax-js";
 const About = () => {
+  const sceneEl = useRef(null);
+
+  useEffect(() => {
+    if (sceneEl && sceneEl.current) {
+      const parallaxInstance = new Parallax(sceneEl.current, {
+        relativeInput: true,
+        hoverOnly: true,
+      });
+
+      parallaxInstance.enable();
+      return () => parallaxInstance.disable();
+    }
+  }, []);
   return (
-    <div className="arlo_tm_section relative" id="about">
+    <div
+      className="arlo_tm_section relative"
+      id="about"
+      style={{ paddingTop: 100, paddingBottom: 100 }}
+    >
       <div className="arlo_tm_about_wrapper_all">
         <div className="container">
           <div className="arlo_tm_title_holder">
@@ -14,12 +33,17 @@ const About = () => {
             <div className="author_wrap">
               <div className="leftbox">
                 <div
+                  ref={sceneEl}
                   className="about_image_wrap parallax"
                   data-relative-input="true"
                 >
                   <div className="image layer" data-depth="0.1">
                     <img src="img/about/550x640.jpg" alt="550x640" />
-                    <div className="inner" data-img-url={trungLogo}></div>
+                    <div
+                      className="inner"
+                      data-img-url={trungLogo}
+                      style={{ backgroundImage: `url(${trungLogo})` }}
+                    ></div>
                   </div>
                   <div className="border layer" data-depth="0.2">
                     <img src="img/about/550x640.jpg" alt="550x640" />
