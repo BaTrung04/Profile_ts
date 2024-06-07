@@ -78,15 +78,15 @@ const About = () => {
                 </div>
                 <div className="definition">
                   <p>
-                    Hi! My name is <strong>Alan Michaelis</strong>. I am a Web
-                    Developer, and I'm very passionate and dedicated to my work.
-                    With 20 years experience as a professional Web developer, I
-                    have acquired the skills and knowledge necessary to make
-                    your project a success. I enjoy every step of the design
-                    process, from discussion and collaboration to concept and
-                    execution, but I find the most satisfaction in seeing the
-                    finished product do everything for you that it was created
-                    to do.
+                    Xin chào, mình là Nguyễn Bá Trung <strong></strong>.
+                    <br></br>
+                    Muốn trở thành một Web Developer
+                    <br></br>
+                    Muốn được thử thách cũng như phát triển bản thân trong môi
+                    trường doanh nghiệp
+                    <br></br>
+                    Học hỏi thêm kiếm thức , kĩ năng, giao tiếp,.. tạo ra giá
+                    trị cho môi trường doanh nghiệp
                   </p>
                 </div>
                 <div className="about_short_contact_wrap">
@@ -98,12 +98,8 @@ const About = () => {
                     </li>
                     <li>
                       <span>
-                        <label>Tuổi:</label> 22
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        <label>Thành phố:</label> Hà nội
+                        <label>Trường học:</label> Trường Đại Học Công Nghiệp Hà
+                        Nội
                       </span>
                     </li>
                     <li>
@@ -113,19 +109,10 @@ const About = () => {
                     </li>
                     <li>
                       <span>
-                        <label>Trường học:</label> Trường Đại Học Công Nghiệp Hà
-                        Nội
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        <label>Degree:</label> Master
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        <label>Website:</label>{" "}
-                        <a href="#">www.mywebsite.com</a>
+                        <label>Github:</label>{" "}
+                        <a href="https://github.com/BaTrung04">
+                          https://github.com/BaTrung04
+                        </a>
                       </span>
                     </li>
                     <li>
@@ -139,11 +126,6 @@ const About = () => {
                     <li>
                       <span>
                         <label>Phone:</label> <a href="#">+84 099 999 09 09</a>
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        <label>Twitter:</label> <a href="#">&#64;myusername</a>
                       </span>
                     </li>
                   </ul>

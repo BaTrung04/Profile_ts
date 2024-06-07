@@ -23,7 +23,7 @@ const Project = () => {
   const dataProjects: IDataProject[] = [
     {
       image: <FaReact size={50} color="#3a6ddb" />,
-      title: "Website Clone Tiki",
+      title: "Website Clone Design",
       shortDescription: ` Web design is a similar process of creation, with the intention of presenting the content on electronic pages...`,
       detail: {
         Descriptions: "",
@@ -45,6 +45,19 @@ const Project = () => {
         demo: "234234",
         member: 1,
         github: "rtrungfasss",
+      },
+    },
+    {
+      image: <FaReact size={50} color="#3a6ddb" />,
+      title: "Website Clone Tiki",
+      shortDescription: ` Web design is a similar process of creation, with the intention of presenting the content on electronic pages...`,
+      detail: {
+        Descriptions: "",
+        Frontend: "",
+        Backend: "",
+        demo: "",
+        member: 1,
+        github: "",
       },
     },
     {

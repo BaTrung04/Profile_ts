@@ -1,8 +1,11 @@
 const Contact = () => {
   return (
-    <div className="arlo_tm_section" id="contact">
+    <div className="arlo_tm_section" id="contact" style={{}}>
       <div className="container">
-        <div className="arlo_tm_title_holder contact">
+        <div
+          className="arlo_tm_title_holder contact"
+          //style={{ paddingTop: 200, paddingBottom: 200 }}
+        >
           <h3>Contact Me</h3>
           <span>Get in touch with me</span>
         </div>
@@ -43,37 +46,6 @@ const Contact = () => {
               <div className="arlo_tm_contact_wrap">
                 <div className="main_input_wrap">
                   <div style={{ height: 200 }}></div>
-                  {/* <form
-                    action="http://frenify.com/"
-                    method="post"
-                    className="contact_form"
-                    id="contact_form"
-                  >
-                    <div
-                      className="returnmessage"
-                      data-success="Your message has been received, We will contact you soon."
-                    ></div>
-                    <div className="empty_notice">
-                      <span>Please Fill Required Fields</span>
-                    </div>
-                    <div className="wrap">
-                      <input id="name" type="text" placeholder="Your Name" />
-                    </div>
-                    <div className="wrap">
-                      <input id="email" type="text" placeholder="Your Email" />
-                    </div>
-                    <div className="wrap">
-                      <textarea
-                        id="message"
-                        placeholder="Your Message"
-                      ></textarea>
-                    </div>
-                    <div className="arlo_tm_button">
-                      <a id="send_message" href="#">
-                        <span>Send Message</span>
-                      </a>
-                    </div>
-                  </form> */}
                 </div>
               </div>
             </div>
