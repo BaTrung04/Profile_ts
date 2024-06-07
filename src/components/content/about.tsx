@@ -3,6 +3,7 @@ import myCV from "@/assets/CV Nguyễn Bá Trung.pdf";
 import { TypeAnimation } from "react-type-animation";
 import { useEffect, useRef } from "react";
 import Parallax from "parallax-js";
+import logo550 from "@/assets/img/about/550x640.jpg";
 const About = () => {
   const sceneEl = useRef(null);
 
@@ -38,7 +39,7 @@ const About = () => {
                   data-relative-input="true"
                 >
                   <div className="image layer" data-depth="0.1">
-                    <img src="img/about/550x640.jpg" alt="550x640" />
+                    <img src={logo550} alt="550x640" />
                     <div
                       className="inner"
                       data-img-url={trungLogo}
@@ -46,7 +47,7 @@ const About = () => {
                     ></div>
                   </div>
                   <div className="border layer" data-depth="0.2">
-                    <img src="img/about/550x640.jpg" alt="550x640" />
+                    <img src={logo550} alt="550x640" />
                     <div className="inner"></div>
                   </div>
                 </div>
